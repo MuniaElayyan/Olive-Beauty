@@ -213,3 +213,20 @@ for(let i = 0; i < dataProduct.length; i++){
 document.getElementById("inventoryValue").innerHTML ="$" + inventory;
 }
 
+function logout(){
+
+localStorage.removeItem("login");
+
+window.location.href="login.html";
+
+}
+
+// تسجيل الخروج
+
+function logout(){
+
+localStorage.removeItem("login");
+
+window.location.href = "login.html";
+
+}
