@@ -13,28 +13,109 @@ Olive Beauty Studio
 
 
 <body class="bg-[#17231B] text-[#F5F0E6]">
+<script>
 
+if(localStorage.login != "true"){
+
+window.location.href="login.html";
+
+}
+
+</script>
 <nav class="bg-[#162118] px-10 py-6 flex justify-between items-center sticky top-0 z-50">
-<h1 class="text-3xl font-bold text-[#E8DCC4] tracking-wide">Olive Beauty</h1>
-<button  id="menuBtn" class="md:hidden text-[#E8DCC4] text-3xl">
-<i class="fa-solid fa-bars"></i></button>
 
-<div id="mobileMenu" class=" hidden absolute top-[80px] left-0 w-full bg-[#162118] text-center py-6
-space-y-5 text-[#B6AD90]">
-<a href="#home" class="block hover:text-[#E8DCC4]">Home</a>
-<a href="#products" class="block hover:text-[#E8DCC4]">Products</a>
-<a href="#dashboard" class="block hover:text-[#E8DCC4]">Dashboard</a>
-<a href="#tools" class="block hover:text-[#E8DCC4]">Tools</a>
-<a href="#contact" class="block hover:text-[#E8DCC4]">Contact</a>
+<!-- اللوجو والاسم -->
+<div class="flex items-center gap-3">
+<img src="d.png" 
+class="w-12 h-12 rounded-full border-2 border-[#B8A06A]">
+
+<h1 class="text-3xl font-bold text-[#E8DCC4] tracking-wide">
+Olive Beauty
+</h1>
 </div>
 
-<div class="hidden md:flex gap-8 text-[#B6AD90]">
-<a href="#home"class="hover:text-[#E8DCC4] transition"> Home </a>
-<a href="#products"class="hover:text-[#E8DCC4] transition"> Products </a>
-<a href="#dashboard"class="hover:text-[#E8DCC4] transition"> Dashboard </a>
-<a href="#tools"class="hover:text-[#E8DCC4] transition"> Tools </a>
-<a href="#contact"class="hover:text-[#E8DCC4] transition"> Contact </a>
+
+<!-- زر الجوال -->
+<button id="menuBtn" class="md:hidden text-[#E8DCC4] text-3xl">
+<i class="fa-solid fa-bars"></i>
+</button>
+
+
+
+<!-- الروابط في المنتصف -->
+<div class="hidden md:flex gap-8 text-[#B6AD90] absolute left-1/2 -translate-x-1/2">
+
+<a href="#home" class="hover:text-[#E8DCC4] transition">
+Home
+</a>
+
+<a href="#products" class="hover:text-[#E8DCC4] transition">
+Products
+</a>
+
+<a href="#dashboard" class="hover:text-[#E8DCC4] transition">
+Dashboard
+</a>
+
+<a href="#tools" class="hover:text-[#E8DCC4] transition">
+Tools
+</a>
+
+<a href="#contact" class="hover:text-[#E8DCC4] transition">
+Contact
+</a>
+
 </div>
+
+
+
+<!-- زر Logout على اليمين -->
+<button onclick="logout()"
+class="hidden md:block bg-[#556B2F] px-5 py-2 rounded-lg text-white hover:bg-[#6B8E23]">
+
+Logout
+
+</button>
+
+
+
+<!-- قائمة الجوال -->
+<div id="mobileMenu" 
+class="hidden absolute top-[80px] left-0 w-full bg-[#162118] text-center py-6 space-y-5 text-[#B6AD90]">
+
+
+<a href="#home" class="block">
+Home
+</a>
+
+<a href="#products" class="block">
+Products
+</a>
+
+<a href="#dashboard" class="block">
+Dashboard
+</a>
+
+<a href="#tools" class="block">
+Tools
+</a>
+
+<a href="#contact" class="block">
+Contact
+</a>
+
+
+<button onclick="logout()"
+class="bg-[#556B2F] px-5 py-2 rounded-lg text-white">
+
+Logout
+
+</button>
+
+
+</div>
+
+
 </nav>
 
 <!-- الهييروو -->
