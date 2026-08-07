@@ -17,7 +17,7 @@ return;
 }
 
 localStorage.login = "true";
-window.location.href = "1.html";
+window.location.href = "index.html";
 };
 
 username.oninput = function(){
