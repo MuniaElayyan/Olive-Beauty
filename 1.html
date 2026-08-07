@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Olive Beauty Studio
+</title>
+<link rel="icon" type="image/png" href="d.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+
+<body class="bg-[#17231B] text-[#F5F0E6]">
+
+<nav class="bg-[#162118] px-10 py-6 flex justify-between items-center sticky top-0 z-50">
+<h1 class="text-3xl font-bold text-[#E8DCC4] tracking-wide">Olive Beauty</h1>
+<button  id="menuBtn" class="md:hidden text-[#E8DCC4] text-3xl">
+<i class="fa-solid fa-bars"></i></button>
+
+<div id="mobileMenu" class=" hidden absolute top-[80px] left-0 w-full bg-[#162118] text-center py-6
+space-y-5 text-[#B6AD90]">
+<a href="#home" class="block hover:text-[#E8DCC4]">Home</a>
+<a href="#products" class="block hover:text-[#E8DCC4]">Products</a>
+<a href="#dashboard" class="block hover:text-[#E8DCC4]">Dashboard</a>
+<a href="#tools" class="block hover:text-[#E8DCC4]">Tools</a>
+<a href="#contact" class="block hover:text-[#E8DCC4]">Contact</a>
+</div>
+
+<div class="hidden md:flex gap-8 text-[#B6AD90]">
+<a href="#home"class="hover:text-[#E8DCC4] transition"> Home </a>
+<a href="#products"class="hover:text-[#E8DCC4] transition"> Products </a>
+<a href="#dashboard"class="hover:text-[#E8DCC4] transition"> Dashboard </a>
+<a href="#tools"class="hover:text-[#E8DCC4] transition"> Tools </a>
+<a href="#contact"class="hover:text-[#E8DCC4] transition"> Contact </a>
+</div>
+</nav>
+
+<!-- الهييروو -->
+
+<section id="home"class="min-h-[80vh] bg-[#162118] flex items-center justify-center text-center px-10">
+<div>
+<img  src="d.png"  alt="Olive Beauty Logo"class=" w-80  h-80  mx-auto  mb-8  rounded-full  object-cover  border-4  border-[#B8A06A]  shadow-2xl  hover:scale-105 transition duration-500  ">
+<h2 class="text-5xl md:text-6xl font-bold mb-6 text-[#E8DCC4]"> Natural Beauty Starts Here </h2>
+<p class="text-lg text-[#B6AD90] max-w-xl mx-auto leading-8"> Discover handcrafted skincare products made with natural ingredients, botanical extracts, and organic oils for healthy, glowing skin.</p>
+<a href="#dashboard"
+class="mt-8 inline-block px-8 py-3 rounded-full bg-[#556B2F] hover:bg-[#6B8E23] transition text-[#F5F3EB] hover:scale-105">
+Explore Store
+</a>
+</div>
+</section>
+
+<!-- خط فاصل صغيير ذهبي -->
+
+<div class="bg-[#162118] py-8">
+<div class="w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70"></div>
+</div>
+
+
+<!--  المنتجات والفئات الموجودة عنا  -->
+
+<section id="products"class="bg-[#1F3024] py-20 px-10">
+ <h2 class="text-4xl font-bold text-center mb-12 text-[#E8DCC4]"> Explore Categories </h2>
+
+ <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+ <div class="bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-2 transition">
+ <div class="w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+<i class="fa-solid fa-soap text-2xl"></i> </div>
+  <h3 class="text-2xl font-bold mb-3">  Natural Body Care </h3>
+ <p class="text-[#B6AD90]">
+Body wash, soaps and moisturizing products </p>
+ </div>
+
+ <div class="bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-2 transition">
+ <div class="w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+<i class="fa-solid fa-droplet text-2xl"></i> </div>
+ <h3 class="text-2xl font-bold mb-3">Natural Oils & Serums</h3>
+ <p class="text-[#B6AD90]"> Pure botanical oils and facial serums </p>
+ </div>
+
+
+ <div class="bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-2 transition">
+ <div class="w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+ <i class="fa-solid fa-leaf text-2xl"></i>
+ </div>
+ <h3 class="text-2xl font-bold mb-3"> Skin Care </h3>
+  <p class="text-[#B6AD90]"> Creams, aloe vera and daily skincare </p>
+ </div>
+
+
+<div class="bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-2 transition">
+ <div class="w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+<i class="fa-solid fa-gift text-2xl"></i> </div>
+  <h3 class="text-2xl font-bold mb-3"> Beauty Collections </h3>
+ <p class="text-[#B6AD90]">  Luxury skincare sets and gift collections </p>
+ </div>
+ </div>
+</section>
+
+<!-- الفااااصل الذهبيي -->
+
+<div class="bg-[#1F3024] py-8">
+ <div class="w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+ </div>
+</div>
+
+<!--  تعريف عن المتجر تبعنا  -->
+<section class="bg-[#162118] py-20 px-10">
+<div class="text-center mb-12">
+ <h2 class="text-4xl font-bold text-[#E8DCC4]">  Take A Tour Inside Our Store </h2>
+ <p class="text-[#B6AD90] mt-4">
+Explore Olive Beauty and discover a world of handcrafted skincare, organic ingredients, botanical oils, and eco-friendly beauty products designed to nourish your skin naturally. </p>
+ </div>
+
+ <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+ <div>
+<video controls  class="rounded-3xl shadow-2xl w-full border border-[#B8A06A]/20">
+ <source src="2.mp4" type="video/mp4">
+ </video>
+ </div>
+
+<div>
+ <h3 class="text-3xl font-bold mb-6 text-[#D8C3A5]"> Luxury Beauty Experience </h3>
+<p class="text-[#B6AD90] leading-8 mb-8">
+  Explore our elegant beauty store,
+ discover premium perfumes,
+ skincare collections and makeup products
+ in a modern luxury atmosphere.
+ </p>
+
+ <div class="space-y-5">
+ <div class="flex items-center gap-4">
+ <div class="w-12 h-12 rounded-full bg-[#556B2F]  flex items-center justify-center">
+<i class="fa-solid fa-seedling"></i> </div>
+ <p class="text-[#E8DCC4]">
+100% Natural Ingredients</p>
+ </div>
+
+
+ <div  class="flex items-center gap-4">
+  <div  class="w-12 h-12 rounded-full bg-[#556B2F] flex items-center justify-center">
+
+<i class="fa-solid fa-hand-sparkles"></i> </div>
+
+
+ <p class="text-[#E8DCC4]">
+Handcrafted Products</p>
+</div>
+
+
+ <div class="flex items-center gap-4">
+ <div  class="w-12 h-12 rounded-full bg-[#556B2F] flex items-center justify-center">
+<i class="fa-solid fa-leaf"></i>  </div>
+  <p class="text-[#E8DCC4]">  Eco-Friendly Packaging  </p>
+</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+
+<!-- الخط مرة اخرى -->
+<div class="bg-[#162118] py-8">
+<div class="w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+ </div>
+</div>
+
+
+<!-- المنتجات الممييززةة -->
+
+<section id="featured" class="bg-[#1F3024] py-20 px-10">
+
+    <h2 class="text-4xl font-bold text-center mb-16 text-[#E8DCC4]">
+        Featured Products
+    </h2>
+
+    <div class="relative max-w-7xl mx-auto">
+
+        <!-- الخط الذهبي -->
+        <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-1 -translate-x-1/2 bg-[#B8A06A] rounded-full"></div>
+
+        <!-- المنتج الأول -->
+        <div class="relative flex justify-start mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="4.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Pure Aloe Vera Soothing Gel
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Aloe Vera Gel
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:99% Pure Aloe Vera
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$16
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:30 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج الثاني -->
+        <div class="relative flex justify-end mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="2.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Golden Glow Botanical Facial Oil
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Facial Oil
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Botanical Oils
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$28
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:18 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج الثالث -->
+        <div class="relative flex justify-start mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="1.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Olive Beauty Pure Nourishing Cream
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Moisturizing Cream
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Olive Oil
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$24
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:40 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج الرابع -->
+        <div class="relative flex justify-end mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="3.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Organic Virgin Coconut Butter
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Handmade Soap
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Virgin Coconut
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$22
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:20 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+                <!-- المنتج الخامس -->
+        <div class="relative flex justify-start mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="5.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Rose Water Facial Mist
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Facial Mist
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Pure Rose Water
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$14
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:45 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج السادس -->
+        <div class="relative flex justify-end mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="9.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Natural Jade Roller & Gua Sha Set
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Beauty Tools
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Natural Jade Stone
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$32
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:18 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج السابع -->
+        <div class="relative flex justify-start mb-20">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="7.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Amber Rejuvenating Night Cream
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Night Cream
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Natural Botanical Extracts
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$29
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:19 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- المنتج الثامن -->
+        <div class="relative flex justify-end">
+
+            <div class="hidden lg:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-[#B8A06A] border-4 border-[#1F3024]"></div>
+
+            <div class="w-full lg:w-[43%] bg-[#243428] rounded-2xl overflow-hidden shadow-xl hover:-translate-y-3 transition duration-300">
+
+                <img src="57.png" class="w-full h-60 object-cover">
+
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Sakura Blossom Glow Cream
+                    </h3>
+
+                    <p class="text-[#B6AD90]">
+                        Category:Body Cream
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Main Ingredient:Eucalyptus Extract
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Price:$24
+                    </p>
+
+                    <p class="text-[#B6AD90]">
+                        Available:22 Pieces
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- الفاصل عاد -->
+
+<div class="bg-[#1F3024] py-8">
+<div class="w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+ </div>
+</div>
+
+<!-- احصائياات للموقع والمنتجات والارباح -->
+
+<section class="bg-[#162118] py-20 px-10">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div class="bg-[#243428] rounded-2xl p-8 shadow-xl hover:-translate-y-2 transition">
+ <div class="flex justify-between items-center">
+ <div>
+ <p class="text-[#B6AD90]">
+ Products
+</p>
+ <h3 id="productsCount"  class="text-4xl font-bold mt-3 text-[#E8DCC4]">0</h3>
+ </div>
+<i class="fa-solid fa-spa text-4xl text-[#D8C3A5]"></i> </div>
+ </div>
+
+ <div class="bg-[#243428] rounded-2xl p-8 shadow-xl hover:-translate-y-2 transition">
+ <div class="flex justify-between items-center">
+ <div>
+ <p class="text-[#B6AD90]">
+ Categories
+</p>
+ <h3 id="categoryCount"
+  class="text-4xl font-bold mt-3 text-[#E8DCC4]">0</h3>
+</div>
+
+<i class="fa-solid fa-tags text-4xl text-[#D8C3A5]"></i></div>
+</div>
+
+ <div class="bg-[#243428] rounded-2xl p-8 shadow-xl hover:-translate-y-2 transition">
+ <div class="flex justify-between items-center">
+ <div>
+ <p class="text-[#B6AD90]">
+ Total Quantity
+ </p>
+
+<h3  id="quantityCount"  class="text-4xl font-bold mt-3 text-[#E8DCC4]"> 0</h3>
+</div>
+<i class="fa-solid fa-boxes-stacked text-4xl text-[#D8C3A5]"></i> </div>
+ </div>
+
+ <div class="bg-[#243428] rounded-2xl p-8 shadow-xl hover:-translate-y-2 transition">
+ <div class="flex justify-between items-center">
+ <div>
+<p class="text-[#B6AD90]">
+ Inventory Value
+</p>
+
+ <h3 id="inventoryValue" class="text-4xl font-bold mt-3 text-[#E8DCC4]">  $0 </h3>
+ </div>
+<i class="fa-solid fa-chart-line text-4xl text-[#D8C3A5]"></i></div>
+ </div>
+</div>
+</section>
+
+
+<!-- الفاصل كمان مرة -->
+<div class="bg-[#162118] py-8">
+<div class="w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+</div>
+</div>
+
+
+<!-- التاسك لليوم -->
+
+<section id="dashboard"class="bg-[#1F3024] py-20 px-10">
+<div class="text-center mb-12">
+<span class="inline-block px-5 py-2 rounded-full bg-[#314437] text-[#D8C3A5]">
+ Store Dashboard
+</span>
+<h2 class="text-5xl font-bold mt-6 text-[#E8DCC4]">Product Management Dashboard</h2>
+ <p class="text-[#B6AD90] max-w-3xl mx-auto mt-5 leading-8">
+ Manage beauty products, control inventory, update prices and organize your store data easily.
+ </p>
+</div>
+<div class="max-w-6xl mx-auto bg-[#162118] rounded-3xl p-6 border border-[#314437] shadow-2xl">
+<input type="text" id="productName" placeholder="Product Name"class=" w-full h-11 my-2 rounded-lg border border-[#3D5344]
+bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all duration-300 focus:scale-[1.03] focus:-translate-y-1 focus:bg-[#314437]">
+
+<div class="grid grid-cols-1 md:grid-cols-5 gap-3">
+
+<input type="number" id="price" placeholder="Price" onkeyup="getTotal()"
+class="h-11 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all
+focus:scale-[1.03] focus:-translate-y-1">
+
+
+<input type="number" id="tax" placeholder="Tax" onkeyup="getTotal()"
+class="h-11 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all
+focus:scale-[1.03] focus:-translate-y-1">
+
+
+<input type="number" id="shipping" placeholder="Shipping" onkeyup="getTotal()"
+class=" h-11 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all
+focus:scale-[1.03] focus:-translate-y-1">
+
+<input type="number" id="discount" placeholder="Discount" onkeyup="getTotal()"
+class=" h-11 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all focus:scale-[1.03] focus:-translate-y-1">
+
+<small id="total"
+class=" bg-[#8A6E3B] text-white rounded-lg flex items-center justify-center font-bold">
+Total: $0
+</small>
+</div>
+
+
+<input type="number" id="quantity" placeholder="Quantity"
+class=" w-full h-11 my-2 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none transition-all focus:scale-[1.03] focus:-translate-y-1 ">
+
+
+<input type="text" id="category" placeholder="Category"
+class=" w-full h-11 my-2 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none
+transition-all focus:scale-[1.03] focus:-translate-y-1">
+
+
+<button id="submit"class=" w-full h-12 mt-3 rounded-xl bg-[#556B2F] hover:bg-[#6B8E23] transition
+text-white hover:scale-[1.02]">
+Add Product
+</button>
+
+
+<div class="mt-8">
+<input type="text" id="search" placeholder="Search Product..."
+class="w-full h-11 rounded-lg border border-[#3D5344] bg-[#253328] px-4 text-[#F5F3EB] outline-none  transition-all  duration-300  focus:scale-[1.03] focus:-translate-y-1  focus:bg-[#314437] ">
+
+<div class="  grid  grid-cols-1  md:grid-cols-2 gap-5 mt-5">
+ <button id="searchName" class=" h-11 rounded-xl bg-[#556B2F] hover:bg-[#6B8E23] text-white transition hover:scale-105">
+ Search By Name
+</button>
+ <button id="searchCategory"class=" h-11 rounded-xl  bg-[#556B2F]  hover:bg-[#6B8E23]  text-white transition  hover:scale-105">
+ Search By Category
+ </button>
+</div>
+</div>
+
+<div id="deleteAll" class="my-8"></div>
+
+
+<div class=" overflow-x-auto rounded-2xl shadow-2xl border border-[#314437]">
+<table class=" w-full text-center border-collapse whitespace-nowrap">
+
+<thead>
+<tr class=" bg-[#243428] text-[#E8DCC4]">
+
+<th class="p-4 uppercase">ID</th>
+<th class="p-4 uppercase">Name</th>
+<th class="p-4 uppercase">Price</th>
+<th class="p-4 uppercase">Tax</th>
+<th class="p-4 uppercase">Shipping</th>
+<th class="p-4 uppercase">Discount</th>
+<th class="p-4 uppercase">Total</th>
+<th class="p-4 uppercase">Quantity</th>
+<th class="p-4 uppercase">Category</th>
+<th class="p-4 uppercase">Update</th>
+<th class="p-4 uppercase">Delete</th>
+</tr>
+</thead>
+<tbody id="tbody" class=" bg-[#1D2A20] divide-y divide-[#3D5344]"></tbody>
+</table>
+</div>
+</div>
+</section>
+
+<!-- الخط الفاصل -->
+
+
+<div class="bg-[#1F3024] py-8">
+<div class=" w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+</div>
+</div>
+
+
+<!-- الادوات والمواقع الذكية المساعدة -->
+
+<section id="tools" class="bg-[#162118] py-20 px-10">
+<div class="text-center mb-14">
+ <h2 class="text-4xl font-bold text-[#E8DCC4]">  Smart Tools</h2>
+ <p class="text-[#B6AD90] mt-4">
+ Everything you need to manage your store in one place.
+ </p>
+</div>
+
+<div class=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
+
+
+<div class=" bg-[#243428] rounded-2xl p-7 shadow-xl hover:-translate-y-3 transition">
+<div class=" w-16 h-16 rounded-full bg-[#556B2F] flex items-center justify-center mb-6">
+<i class="fa-solid fa-note-sticky text-2xl"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-3">Notes</h3>
+<p class="text-[#B6AD90] mb-6">
+Save product ideas and important reminders.</p>
+
+<a href="https://muniaelayyan.github.io/MindSpace/" class=" inline-block bg-[#556B2F] px-6 py-2 rounded-lg
+hover:bg-[#6B8E23] transition" target="_blank">
+Open Notes
+</a>
+</div>
+
+<div class=" bg-[#243428] rounded-2xl p-7 shadow-xl hover:-translate-y-3 transition">
+
+<div class=" w-16 h-16 rounded-full bg-[#556B2F] flex items-center
+justify-center mb-6">
+<i class="fa-solid fa-list-check text-2xl"></i>
+</div>
+
+<h3 class="text-2xl font-bold mb-3"> To Do List</h3>
+<p class="text-[#B6AD90] mb-6">
+Manage your daily store tasks efficiently.</p>
+
+<a href="https://muniaelayyan.github.io/luma-todo/" class=" inline-block bg-[#556B2F] px-6 py-2 rounded-lg hover:bg-[#6B8E23] transition"target="_blank">
+Open Tasks
+</a>
+</div>
+
+
+<div class=" bg-[#243428] rounded-2xl p-7 shadow-xl hover:-translate-y-3 transition">
+<div class=" w-16 h-16 rounded-full bg-[#556B2F] flex items-center justify-center mb-6">
+<i class="fa-solid fa-calculator text-2xl"></i>
+</div>
+
+
+<h3 class="text-2xl font-bold mb-3"> Calculator</h3>
+
+<p class="text-[#B6AD90] mb-6">
+Calculate prices, discounts and product costs.</p>
+
+<a href="https://muniaelayyan.github.io/Calculator2/" class=" inline-block bg-[#556B2F] px-6 py-2 rounded-lg hover:bg-[#6B8E23] transition" target="_blank">
+Open Calculator
+</a>
+</div>
+</section>
+
+
+<!-- الذهبي الفاصل  -->
+
+<div class="bg-[#162118] py-8">
+<div class=" w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+</div>
+</div>
+
+
+<!-- قسم التواااصل  -->
+
+<section class="bg-[#162118] py-20 px-10">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold text-[#E8DCC4]"> Contact Me </h2>
+ <p  class="text-[#B6AD90] mt-4">
+Let's connect and build amazing projects together. </p>
+    </div>
+
+<div class=" max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+<div class=" bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-3 transition">
+
+<div class=" w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+
+<i class="fa-brands fa-linkedin text-3xl"></i>
+</div>
+
+<h3 class="text-xl font-bold mb-3">LinkedIn</h3>
+
+<a href="https://www.linkedin.com/in/muniaelayyan/" class="text-[#B8A06A] hover:text-[#E8DCC4]" target="_blank">
+Visit Profile
+</a>
+</div>
+
+
+<div class=" bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-3 transition">
+<div class=" w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+<i class="fa-brands fa-github text-3xl"></i>
+</div>
+
+<h3 class="text-xl font-bold mb-3">GitHub</h3>
+<a href="https://github.com/MuniaElayyan" class="text-[#B8A06A] hover:text-[#E8DCC4]"target="_blank">
+View Projects
+</a>
+</div>
+
+<div class=" bg-[#243428] rounded-2xl p-8 text-center shadow-xl hover:-translate-y-3 transition">
+
+<div class=" w-16 h-16 mx-auto rounded-full bg-[#556B2F] flex items-center justify-center mb-5">
+<i class="fa-solid fa-envelope text-3xl"></i>
+</div>
+
+<h3 class="text-xl font-bold mb-3">Email</h3>
+
+<a href="#"class="text-[#B8A06A] hover:text-[#E8DCC4]">
+Send Message
+</a>
+</div>
+</div>
+</section>
+
+
+<!-- الخط الذهبي -->
+
+<div class="bg-[#162118] py-8">
+<div class=" w-32 h-[2px] bg-[#B8A06A] mx-auto rounded-full opacity-70">
+</div>
+</div>
+
+<!-- الفوترر -->
+<footer class="bg-[#1F3024] py-10 px-10 text-center">
+<h2 class=" text-3xl font-bold text-[#E8DCC4] mb-4">Olive Beauty</h2>
+
+<p class="text-[#B6AD90] mb-6">
+Natural skincare crafted with botanical ingredients to help you enjoy healthy, glowing skin every day.
+</p>
+
+<div class=" flex justify-center gap-6 mb-6">
+<a href="https://github.com/MuniaElayyan" class=" w-10 h-10 rounded-full bg-[#243428] flex items-center
+justify-center hover:bg-[#556B2F] transition"target="_blank">
+<i class="fa-brands fa-github"></i>
+</a>
+
+
+<a href="https://www.linkedin.com/in/muniaelayyan/" class=" w-10 h-10 rounded-full bg-[#243428] flex items-center
+justify-center hover:bg-[#556B2F] transition"target="_blank">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+<a href="#" class=" w-10 h-10 rounded-full bg-[#243428] flex items-center justify-center hover:bg-[#556B2F] transition">
+<i class="fa-solid fa-envelope"></i>
+</a>
+</div>
+
+<p class="text-[#B8A06A]">
+© 2026 Olive Beauty. All Rights Reserved.
+</p>
+
+<p class="text-[#B6AD90] mt-3 text-sm">
+Developed by Munia Elayyan
+</p>
+</footer>
+</body>
+<script src="3.js"></script>
+</html>
